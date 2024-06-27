@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import "https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap";
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
