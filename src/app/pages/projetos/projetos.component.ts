@@ -33,4 +33,10 @@ export class ProjetosComponent {
         this.closeMenu();
         this.router.navigate([`/projetos/${this.prepareSringPath(page)}`]);
     }
+
+    isRouteActive(page: string): boolean {
+        return this.router.routerState.snapshot.url.endsWith(
+            this.prepareSringPath(page)
+        );
+    }
 }

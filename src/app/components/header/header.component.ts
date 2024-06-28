@@ -1,6 +1,6 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
     selector: 'app-header',
@@ -13,7 +13,7 @@ export class HeaderComponent {
     menuOptions: string[] = ['home', 'sobre', 'projetos', 'contato'];
     menuIsVisible: boolean = false;
 
-    constructor(private router: Router) {}
+    constructor(private router: Router, private route: ActivatedRoute) {}
 
     toggleMenuVisibility(): void {
         this.menuIsVisible = !this.menuIsVisible;
@@ -26,5 +26,9 @@ export class HeaderComponent {
     goToPage(page: string): void {
         this.closeMenu();
         this.router.navigate([`/${page}`]);
+    }
+
+    isRouteActive(page: string): boolean {
+        return this.router.routerState.snapshot.url.startsWith(`/${page}`);
     }
 }

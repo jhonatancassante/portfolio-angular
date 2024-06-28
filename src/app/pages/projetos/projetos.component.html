@@ -8,7 +8,12 @@
         <nav>
             <ul>
                 @for (item of menuOptions; track $index) {
-                <li (click)="goToPage(item)">{{ item }}</li>
+                <li
+                    (click)="goToPage(item)"
+                    [class.selected-item]="isRouteActive(item)"
+                >
+                    {{ item }}
+                </li>
                 }
             </ul>
         </nav>

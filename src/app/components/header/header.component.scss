@@ -135,6 +135,16 @@ header {
                             background-color: $primary-color;
                             z-index: 5;
                         }
+
+                        &.selected-item::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -1.875rem;
+                            height: 5px;
+                            width: 7.5rem;
+                            background-color: $primary-color;
+                            z-index: 5;
+                        }
                     }
                 }
             }

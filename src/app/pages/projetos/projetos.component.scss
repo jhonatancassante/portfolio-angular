@@ -107,7 +107,17 @@
                             content: "";
                             position: absolute;
                             right: 0;
-                            height: 3.25rem;
+                            height: 3.5rem;
+                            width: 5px;
+                            background-color: $primary-color;
+                            z-index: 5;
+                        }
+
+                        &.selected-item::after {
+                            content: "";
+                            position: absolute;
+                            right: 0;
+                            height: 3.5rem;
                             width: 5px;
                             background-color: $primary-color;
                             z-index: 5;
