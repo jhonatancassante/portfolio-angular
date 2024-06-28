@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class ProjetosComponent {
     menuOptions: string[] = ['pokedex', 'dost on screen', 'formulário'];
-    menuIsVisible: boolean = true;
+    menuIsVisible: boolean = false;
 
     toggleMenuVisibility(): void {
         this.menuIsVisible = !this.menuIsVisible;
