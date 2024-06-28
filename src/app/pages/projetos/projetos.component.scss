@@ -1,0 +1,25 @@
+@import "../../../variables";
+
+.projects-page {
+    display: flex;
+    height: calc(100vh - $header-height);
+    background-color: $secondary-color;
+    color: $primary-text;
+
+    .side-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 17.5rem;
+        padding: 1.5rem;
+    }
+
+    .main {
+        width: 100%;
+        padding: 1.25rem;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 0;
+    }
+}
