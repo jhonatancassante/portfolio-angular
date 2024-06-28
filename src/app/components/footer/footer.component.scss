@@ -41,6 +41,10 @@ footer {
             text-align: center;
         }
 
+        .logo {
+            cursor: pointer;
+        }
+
         .place {
             display: flex;
             justify-content: center;
@@ -66,6 +70,10 @@ footer {
             height: 9.25rem;
             background-color: $primary-text;
             border-radius: 50%;
+        }
+
+        .right-section {
+            gap: 1.5rem;
         }
     }
 }
