@@ -1,0 +1,27 @@
+<header>
+    <picture>
+        <img
+            ngSrc="images/logo02.png"
+            width="132"
+            height="48"
+            alt="logotipo"
+            class="logo"
+            priority
+            (click)="goToPage('home')"
+        />
+    </picture>
+    <nav>
+        <div class="menu-icon">
+            <i class="material-icons" (click)="toggleMenuVisibility()">{{
+                menuIsVisible ? "close" : "menu"
+            }}</i>
+        </div>
+        <div class="main-menu" [class.opened-menu]="menuIsVisible">
+            <ul>
+                @for (item of menuOptions; track $index) {
+                <li (click)="goToPage(item)">{{ item }}</li>
+                }
+            </ul>
+        </div>
+    </nav>
+</header>
