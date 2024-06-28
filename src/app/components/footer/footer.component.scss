@@ -1,0 +1,38 @@
+@import "../../../variables";
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+    background-color: $primary-color;
+    color: $primary-text;
+
+    .socials {
+        display: flex;
+        gap: 2rem;
+
+        a {
+            color: $primary-text;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        svg {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+
+    .place {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+    }
+}
