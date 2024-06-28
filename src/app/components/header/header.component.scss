@@ -41,6 +41,7 @@ header {
         }
 
         .main-menu {
+            display: flex;
             justify-content: flex-start;
             align-items: flex-start;
             position: fixed;
@@ -75,7 +76,7 @@ header {
 
                     &:hover {
                         color: white;
-                        font-size: 1.25rem;
+                        font-size: 1.5rem;
                     }
                 }
             }
@@ -84,6 +85,56 @@ header {
         .opened-menu {
             right: 0;
             transition: 0.2s ease-in-out;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        align-items: center;
+        justify-content: space-between;
+
+        nav {
+            flex-direction: row;
+
+            .menu-icon {
+                display: none;
+            }
+
+            .main-menu {
+                position: relative;
+                right: initial;
+                top: initial;
+                box-shadow: none;
+                justify-content: flex-end;
+                transition: none;
+                width: initial;
+                background-color: transparent;
+
+                ul {
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    padding: 0;
+
+                    li {
+                        justify-content: center;
+                        border: none;
+                        text-transform: capitalize;
+                        width: 7.5rem;
+                        height: 100%;
+
+                        &:hover::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -1.875rem;
+                            height: 5px;
+                            width: 7.5rem;
+                            background-color: $primary-color;
+                            z-index: 5;
+                        }
+                    }
+                }
+            }
         }
     }
 }
