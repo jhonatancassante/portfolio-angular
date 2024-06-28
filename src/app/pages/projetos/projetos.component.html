@@ -8,11 +8,13 @@
         <nav>
             <ul>
                 @for (item of menuOptions; track $index) {
-                <li (click)="closeMenu()">{{ item }}</li>
+                <li (click)="goToPage(item)">{{ item }}</li>
                 }
             </ul>
         </nav>
     </aside>
 
-    <main class="main">Conteúdo</main>
+    <main class="main-projects">
+        <router-outlet />
+    </main>
 </div>

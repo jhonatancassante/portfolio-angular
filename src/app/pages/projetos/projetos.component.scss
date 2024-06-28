@@ -78,9 +78,9 @@
         transition: 0.2s ease-in-out;
     }
 
-    .main {
+    .main-projects {
         width: 100%;
-        padding: 1.25rem 4rem;
+        padding: 0 4rem;
     }
 }
 
@@ -117,9 +117,9 @@
             }
         }
 
-        .main {
+        .main-projects {
             width: calc(100% - 17.5rem);
-            padding: 1.25rem 1.25rem;
+            padding: 0 1.25rem;
         }
     }
 }

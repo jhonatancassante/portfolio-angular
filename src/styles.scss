@@ -11,9 +11,12 @@
     font-family: "Fira Sans", sans-serif;
 }
 
+body {
+    background-color: $background-color;
+}
+
 .main {
     height: calc(100vh - $header-height);
-    background-color: $background-color;
     color: $primary-text;
     padding: 1.25rem 2rem;
 
