@@ -11,7 +11,7 @@
         />
     </picture>
     <nav>
-        <div class="menu-icon">
+        <div class="menu-icon" [class.opened-menu]="menuIsVisible">
             <i class="material-icons" (click)="toggleMenuVisibility()">{{
                 menuIsVisible ? "close" : "menu"
             }}</i>
