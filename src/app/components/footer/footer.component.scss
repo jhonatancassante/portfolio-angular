@@ -49,11 +49,23 @@ footer {
             font-weight: 700;
         }
     }
+
+    .divisor {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
     footer {
         flex-direction: row;
         justify-content: space-around;
+
+        .divisor {
+            display: flex;
+            width: 0.2rem;
+            height: 9.25rem;
+            background-color: $primary-text;
+            border-radius: 50%;
+        }
     }
 }
