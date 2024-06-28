@@ -13,7 +13,7 @@
         left: 0;
         top: calc($header-height + 1rem);
         padding: 0.5rem;
-        padding-left: 0.1rem;
+        padding-left: 0.2rem;
         background-color: $secondary-color;
         border-radius: 0 0.5rem 0.5rem 0;
         transition: 0.2s ease-in-out;
@@ -78,9 +78,9 @@
         transition: 0.2s ease-in-out;
     }
 
-    .main-projects {
+    .projects-container {
         width: 100%;
-        padding: 0 4rem;
+        padding: 0 2rem;
     }
 }
 
@@ -117,7 +117,7 @@
             }
         }
 
-        .main-projects {
+        .projects-container {
             width: calc(100% - 17.5rem);
             padding: 0 1.25rem;
         }
