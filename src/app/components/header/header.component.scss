@@ -80,6 +80,17 @@ header {
                         color: white;
                         font-size: 1.5rem;
                     }
+
+                    &.selected-item::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: initial;
+                        height: 3.5rem;
+                        width: 5px;
+                        background-color: $primary-color;
+                        z-index: 5;
+                    }
                 }
             }
         }
@@ -129,6 +140,7 @@ header {
                         &:hover::after {
                             content: "";
                             position: absolute;
+                            left: initial;
                             bottom: -1.875rem;
                             height: 5px;
                             width: 7.5rem;
@@ -139,6 +151,7 @@ header {
                         &.selected-item::after {
                             content: "";
                             position: absolute;
+                            left: initial;
                             bottom: -1.875rem;
                             height: 5px;
                             width: 7.5rem;
